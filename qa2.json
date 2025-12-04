@@ -1,0 +1,2601 @@
+{
+  "questions": [
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "关于多模态的描述错误的是：",
+      "options": [
+        "A. 传统的多模态基础模型通常为每种模态采用特定的编码器或解码器，这限制了模型有效融合跨模态信息的能力",
+        "B. GPT-4o是首个端到端训练的模型，跨越文本、视觉和音频模态，所有的输入和输出都由单个神经网络处理，也就是原生支持多模态",
+        "C. 多模态就是指多个模型的状态"
+      ],
+      "answer": 2,
+      "analysis": "多模态指多种模态数据，并非多个模型状态，C 错误。"
+    },
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "以下哪一项不是常见的数据预处理工具？",
+      "options": [
+        "A. Macaw-LLM",
+        "B. Data-Juicer",
+        "C. Jellyfish",
+        "D. WordPiece"
+      ],
+      "answer": 2,
+      "analysis": "Jellyfish 是字符串相似度库，不属于大模型数据预处理工具。"
+    },
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "以下关于大模型数据集特点的描述中，错误的是哪一项？",
+      "options": [
+        "A. 所需数据量大，需要占用较大存储空间",
+        "B. 大模型训练流程分为预训练和微调等阶段，每个阶段所需数据集不同",
+        "C. 预训练所需数据种类广泛",
+        "D. 针对专业场景使用专业数据集，内容相对单一"
+      ],
+      "answer": 0,
+      "analysis": "并非错误，错误选项为题目给定答案 1。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "基础模型在构建过程中，需要使用数据中心的大量资源，进行几个月的训练。这个描述主要体现了哪个特点？",
+      "options": [
+        "A. 数据中心基础设施架构非常复杂",
+        "B. 基础模型构建需要非常大的算力",
+        "C. 数据中心需要提供大量的电力、制冷要求",
+        "D. 数据集非常大，要分多轮迭代提供给训练使用"
+      ],
+      "answer": 1,
+      "analysis": "构建基础模型主要瓶颈是算力消耗极大。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "某企业使用CANN来开发大模型应用，但对华为软件架构了解不多，以下哪项功能是CANN不能提供的？",
+      "options": [
+        "A. 加速库提供FlashAttention算子",
+        "B. 保持AI框架不变，模型快速迁移至GPU运行",
+        "C. 使用C/C++标准开发规范",
+        "D. 自适应梯度切分，图编译加速使能处理器并行加速"
+      ],
+      "answer": 1,
+      "analysis": "CANN 不能让模型迁移至 GPU，只支持昇腾 NPU。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "使用MindFormers大模型套件，大模型训练时定义训练参数，以下哪个参数属于优化器配置参数？",
+      "options": [
+        "A. loss scale value",
+        "B. learning_rate",
+        "C. sink size",
+        "D. scale factor"
+      ],
+      "answer": 1,
+      "analysis": "learning_rate 是优化器参数。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "当模型突破某个规模时，性能显著提升，叫做大模型的涌现能力，以下哪个选型不是大模型涌现出的能力？",
+      "options": [
+        "A. 上下文学习",
+        "B. 知识图谱",
+        "C. 逻辑推理",
+        "D. 语言理解"
+      ],
+      "answer": 1,
+      "analysis": "知识图谱不是大模型涌现能力。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "John在使用模型生成文本时发现模型会产生不准确、无关或虚构的信息，这是模型的什么特性？",
+      "options": [
+        "A. 涌现",
+        "B. 真实性",
+        "C. 幻觉",
+        "D. 可解释性"
+      ],
+      "answer": 2,
+      "analysis": "模型生成虚假内容称为幻觉（Hallucination）。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "John准备学习使用大模型，关于大模型的以下描述中，错误的是哪个选项？",
+      "options": [
+        "A. 大模型的参数量比较大",
+        "B. 大模型训练数据集大",
+        "C. 大模型可通过调用工具增强能力",
+        "D. 大模型可以完全模拟人脑推理"
+      ],
+      "answer": 3,
+      "analysis": "大模型不能完全模拟人脑推理。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "人工智能的伦理安全问题不涉及以下哪个选项？",
+      "options": [
+        "A. 模型规模",
+        "B. 隐私数据安全",
+        "C. 数据偏差",
+        "D. 知识产权"
+      ],
+      "answer": 0,
+      "analysis": "模型规模与伦理安全无直接关系。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "John在处理一些任务时使用了几块不同的芯片（CPU、GPU、NPU），以下关于对硬件使用描述中，正确的是哪一个选项？",
+      "options": [
+        "A. 在I/O密集型任务中适合使用NPU",
+        "B. 在逻辑简单、计算密集型任务中适合使用CPU",
+        "C. 在AI训练任务中适合使用GPU和NPU",
+        "D. 在逻辑复杂、计算密集型任务中适合使用GPU"
+      ],
+      "answer": 2,
+      "analysis": "AI 训练主要依赖 GPU/NPU。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "在神经网络中引入非线性因素的是以下哪个选项？",
+      "options": [
+        "A. 权重参数",
+        "B. 激活函数",
+        "C. 损失函数",
+        "D. 模型输入"
+      ],
+      "answer": 1,
+      "analysis": "激活函数提供非线性。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "使用MindFormers大模型套件，大模型训练时定义训练参数，以下哪个参数属于分布式配置参数独有？",
+      "options": [
+        "A. scale_window",
+        "B. learning_rate",
+        "C. pipeline_stage",
+        "D. batch_size"
+      ],
+      "answer": 2,
+      "analysis": "pipeline_stage 是分布式独有参数。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "以下哪一项不是常见的大语言模型训练数据的预处理方法？",
+      "options": [
+        "A. 数据爬取",
+        "B. 隐私处理",
+        "C. 过滤",
+        "D. 数据格式规整"
+      ],
+      "answer": 0,
+      "analysis": "数据爬取属于收集，不属于预处理环节。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "某企业有一个基于caffe框架训练好的模型，需要将其转换为昇腾AI处理器支持的离线模型，以下哪个工具可以完成该功能？",
+      "options": [
+        "A. MindSpore框架",
+        "B. AOE工具",
+        "C. mxVision工具",
+        "D. mxRec工具"
+      ],
+      "answer": 1,
+      "analysis": "AOE 用于模型转换为昇腾离线模型。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "以下大模型中不属于MoE模型的是哪个选项？",
+      "options": [
+        "A. GLaM",
+        "B. Mixtral 8x7B",
+        "C. MAE",
+        "D. Switch Transformer"
+      ],
+      "answer": 2,
+      "analysis": "MAE 是视觉自编码模型，不属于 MoE。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "涌现能力是指当大模型突破某个规模时，性能显著提升。从经验来说，模型参数在哪个区间更可能产生涌现能力？",
+      "options": [
+        "A. 100B到1000B区间",
+        "B. 100亿到1000亿区间",
+        "C. 10亿到100亿区间",
+        "D. 1T到10T区间"
+      ],
+      "answer": 1,
+      "analysis": "涌现一般出现在 10B–100B 之间。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "某工程师在昇腾服务器上训练迁移大模型时发现 loss 出现毛刺，最可能的原因是？",
+      "options": [
+        "A. 数据集存在问题",
+        "B. 深度学习框架版本不正确",
+        "C. 学习率设置过大",
+        "D. CANN版本不正确"
+      ],
+      "answer": 0,
+      "analysis": "数据异常常导致 loss 毛刺。"
+    },
+	
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "FlashAttention通过减少对a的访问次数和b资源的利用，实现了内存节省和计算加速。a和b对应以下哪个选项？",
+      "options": [
+        "A. SRAM和ALU",
+        "B. HBM和SRAM",
+        "C. HBM和DDRAM",
+        "D. L1缓存和ALU"
+      ],
+      "answer": 1,
+      "analysis": "FlashAttention减少对HBM访问并提升SRAM利用率。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "KVCache可以加速LLM推理，以下哪个选项描述是正确的？",
+      "options": [
+        "A. LLM推理过程中只关注邻近token，距离输出较远的token才缓存KV",
+        "B. Text Embedding在推理中不变，相同token的KV相同",
+        "C. 将KV放L1缓存可提升效率",
+        "D. 向量空间距离近的token可共享KV"
+      ],
+      "answer": 1,
+      "analysis": "KV 对同一 token 的特征是固定的，因此可缓存复用。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "以下关于CLIP模型描述错误的是哪个选项？",
+      "options": [
+        "A. CLIP通过对比学习关联图像和文本",
+        "B. 可作为图像生成模型特征提取部分",
+        "C. 图像特征部分是扩散模型",
+        "D. 文本编码器可以是Transformer"
+      ],
+      "answer": 2,
+      "analysis": "CLIP 的图像编码器通常为ViT，不是扩散模型。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "华为盘古大模型3.0是面向行业的大模型，以下哪一项不是华为定义的L1行业大模型？",
+      "options": [
+        "A. 盘古政务大模型",
+        "B. 盘古数字人大模型",
+        "C. 盘古科学计算大模型",
+        "D. 盘古汽车大模型"
+      ],
+      "answer": 2,
+      "analysis": "科学计算大模型属于技术模型，不是行业L1模型。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "某工程师在昇腾服务器上训练迁移大模型时发现loss出现毛刺现象，产生该问题的原因最可能是以下哪一个选项？",
+      "options": [
+        "A. 数据集存在问题",
+        "B. CANN版本不正确",
+        "C. 深度学习框架版本不正确",
+        "D. 学习率设置过大"
+      ],
+      "answer": 0,
+      "analysis": "数据异常最常导致loss毛刺。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "如图所示，以下哪个选项是错误的？",
+      "options": [
+        "A. 若设备有Recv模块，则接收上一设备MatMul结果",
+        "B. Device 0 和 Device 1 之间存在两条Send消息",
+        "C. 梯度计算需最后设备先计算",
+        "D. MatMul按列并行时需放在同一台服务器以提升效率"
+      ],
+      "answer": 3,
+      "analysis": "跨服务器也能并行，非必须放同一服务器。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "AI软件演进趋势为？",
+      "options": [
+        "A. Agent → Copilot → Embedding",
+        "B. Copilot → Embedding → Agent",
+        "C. Embedding → Copilot → Agent"
+      ],
+      "answer": 2,
+      "analysis": "当前趋势是Embedding阶段→Copilot→Agent。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "在智算网络的参数面网络设计中，推荐的带宽规划策略中端到端收敛比一般设计成以下哪一项？",
+      "options": [
+        "A. 1:1",
+        "B. 1:2",
+        "C. 1:10",
+        "D. 2:1"
+      ],
+      "answer": 0,
+      "analysis": "参数面需无阻塞传输，推荐1:1。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "大模型是指：",
+      "options": [
+        "A. 具有大规模参数和复杂结构的深度模型",
+        "B. 自然语言处理模型",
+        "C. 计算机视觉模型",
+        "D. 多模态模型"
+      ],
+      "answer": 0,
+      "analysis": "大模型定义基于参数规模与结构复杂度。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "某企业使用CANN开发大模型，但不熟悉架构，下列哪项功能CANN不能提供？",
+      "options": [
+        "A. 使用C/C++标准开发",
+        "B. 自适应梯度切分与图编译加速",
+        "C. 提供FlashAttention算子",
+        "D. 让模型快速迁移到GPU运行"
+      ],
+      "answer": 3,
+      "analysis": "CANN只支持昇腾NPU，不能迁移到GPU。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "关于小模型的价值描述错误的是：",
+      "options": [
+        "A. 简单场景小模型够用",
+        "B. 小模型成本更低",
+        "C. 小模型可在端侧部署",
+        "D. 小模型适合教学使用",
+        "E. 小模型出现后具备思考能力做复杂任务"
+      ],
+      "answer": 4,
+      "analysis": "小模型无法覆盖复杂任务，不具备强思考能力。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "并行计算不包括哪项？",
+      "options": [
+        "A. 数据并行",
+        "B. 模型并行",
+        "C. 张量并行",
+        "D. 流水线并行",
+        "E. 表格并行"
+      ],
+      "answer": 4,
+      "analysis": "不存在“表格并行”。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "在LLM推理过程中，以下哪个阶段对内存带宽要求高？",
+      "options": [
+        "A. 反向传播",
+        "B. Decoding",
+        "C. Prefill",
+        "D. Encoding"
+      ],
+      "answer": 1,
+      "analysis": "Decoding需频繁读历史KV，带宽需求最高。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "模型量化是指：",
+      "options": [
+        "A. 将参数从高精度转为低精度",
+        "B. 跟踪系统性能",
+        "C. 定期优化模型"
+      ],
+      "answer": 0,
+      "analysis": "量化本质是降低数据精度。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "MindStudio不支持以下哪项功能？",
+      "options": [
+        "A. 分析结果展示",
+        "B. 输出网络分析结果",
+        "C. 安装深度学习框架",
+        "D. 上传脚本"
+      ],
+      "answer": 0,
+      "analysis": "MindStudio不负责框架安装。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "当昇腾网卡与交换机QoS不匹配导致RDMA带宽下降时应调整以下哪个配置？",
+      "options": [
+        "A. HCCL RDMASL",
+        "B. HCCL_INTRAROC ENABLE",
+        "C. HCCL_BUFFSIZE",
+        "D. HCCL RDMATC"
+      ],
+      "answer": 0,
+      "analysis": "RDMASL用于匹配QoS等级。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "使用Mindformers大模型套件，大模型训练时定义训练参数，以下哪个参数属于优化器配置参数？",
+      "options": [
+        "A. loss_scale_value",
+        "B. scale_factor",
+        "C. sink_size",
+        "D. learning_rate"
+      ],
+      "answer": 3,
+      "analysis": "learning_rate 是典型的优化器参数，而其他多为训练控制项。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "某公司计划将基于GPU+Pytorch开发的大模型在昇腾服务器上微调，工程师第一步需要完成的操作是什么？",
+      "options": [
+        "A. 迁移可行性分析",
+        "B. 模型迁移适配",
+        "C. 模型精度评估",
+        "D. 模型选型"
+      ],
+      "answer": 0,
+      "analysis": "迁移前需确认可行性，包括算子、框架、性能风险等。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "大模型的训练包括预训练、微调、RLHF等，以下描述错误的是：",
+      "options": [
+        "A. RLHF用于让模型输出更合法合规",
+        "B. 预训练决定基础能力",
+        "C. 微调增强基础能力弥补数据质量不足",
+        "D. 微调让模型适配下游任务"
+      ],
+      "answer": 2,
+      "analysis": "微调不会提升基础能力，其作用是适配特定任务。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "GLM模型的设计目标是：",
+      "options": [
+        "A. 构建统一预训练框架解决多种任务",
+        "B. 自回归空白填充任务",
+        "C. ChatGLM 的特性描述"
+      ],
+      "answer": 0,
+      "analysis": "GLM目标是统一表征和生成，实现多任务能力。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "关于Function call描述错误的是：",
+      "options": [
+        "A. Function 用文字描述即可",
+        "B. 模型判断是否调用Function",
+        "C. 能实现天气查询等工具调用",
+        "D. 模型会自动生成代码并执行"
+      ],
+      "answer": 3,
+      "analysis": "模型不会直接生成可执行代码，只会返回调用参数。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "关于Transformer计算维度，正确的是：",
+      "options": [
+        "A. 前馈网络输入输出维度保持为 (N, D)",
+        "B. MHA 中 q,k,v 维度均等于嵌入维度D",
+        "C. MHA 头数为H则输出维度为(N,H,D)",
+        "D. 输入序列词嵌入后形状为 (N, D)"
+      ],
+      "answer": 1,
+      "analysis": "MHA 的 q,k,v 都来自线性投影，维度一致。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "华为盘古3.0中，以下哪一项不是L1行业大模型？",
+      "options": [
+        "A. 盘古数字人大模型",
+        "B. 盘古科学计算大模型",
+        "C. 盘古汽车大模型",
+        "D. 盘古政务大模型"
+      ],
+      "answer": 1,
+      "analysis": "科学计算属于技术模型，不是行业大模型。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "在使用Adam优化器并采用混合精度训练时，Model States 中占用最多的是哪部分？",
+      "options": [
+        "A. Optimizer states",
+        "B. Gradients",
+        "C. Loss",
+        "D. Parameters"
+      ],
+      "answer": 0,
+      "analysis": "Adam 需存储 m,v 两套状态，内存占用最大。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "以下哪个选项限制了LLM的长序列生成？",
+      "options": [
+        "A. 序列长需同步扩大模型规模",
+        "B. KV Cache 内存占用或时延增加",
+        "C. 计算量指数增长",
+        "D. 序列过长导致语义捕捉失败"
+      ],
+      "answer": 1,
+      "analysis": "长序列主要受 KVCache 内存和带宽压力限制。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "大模型出现后，小模型依然存在价值，下列哪个是小模型的重要价值？",
+      "options": [
+        "A. 小模型解决的问题更多",
+        "B. 小模型也能通过数据优化具备链式思维",
+        "C. 小模型简单场景表现很好",
+        "D. 多个小模型组合能做复杂任务"
+      ],
+      "answer": 2,
+      "analysis": "小模型在简单场景具有高性价比。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "使用MindFormers套件时，分布式独有参数是哪个？",
+      "options": [
+        "A. scale_window",
+        "B. learning_rate",
+        "C. pipeline_stage",
+        "D. batch_size"
+      ],
+      "answer": 2,
+      "analysis": "pipeline_stage 属于分布式并行配置。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "某公司希望提供文生图服务，适合部署的模型是：",
+      "options": [
+        "A. ChatGLM2",
+        "B. LLaMA2",
+        "C. MAE",
+        "D. Stable Diffusion"
+      ],
+      "answer": 3,
+      "analysis": "Stable Diffusion 是经典文生图模型。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "Mindformers精度调优中，异步dump与同步dump 主要区别于哪一步？",
+      "options": [
+        "A. 启动训练脚本",
+        "B. 解析dump文件",
+        "C. 设置环境变量",
+        "D. 创建json配置文件"
+      ],
+      "answer": 3,
+      "analysis": "同步/异步 dump 在配置文件设置上不同。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "混合精度训练相比单精度训练，以下哪项不是优点？",
+      "options": [
+        "A. 溢出错误概率低",
+        "B. 训练成本低",
+        "C. 训练效率高",
+        "D. 通信效率高"
+      ],
+      "answer": 0,
+      "analysis": "混合精度可能更容易产生溢出，因此 A 不是优点。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "使用Adam + 混合精度训练 7B 模型，Model States 的总开销约为多少？",
+      "options": [
+        "A. 112GB",
+        "B. 56GB",
+        "C. 14GB",
+        "D. 28GB"
+      ],
+      "answer": 0,
+      "analysis": "Adam 需 8×参数量字节，7B×2B×8 =112GB。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "MindFormers低参微调不包含以下哪项？",
+      "options": [
+        "A. Prompt-tuning",
+        "B. P-tuning",
+        "C. GPT",
+        "D. LORA"
+      ],
+      "answer": 2,
+      "analysis": "GPT不是微调技术。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "让不具备中文能力的LLM快速具备中文能力，应使用哪种方式？",
+      "options": [
+        "A. 二次预训练后中文微调",
+        "B. 直接中文微调",
+        "C. 扩充词表后中文微调",
+        "D. 外挂中文知识库"
+      ],
+      "answer": 1,
+      "analysis": "直接中文微调即可快速获得能力。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "关于Function Call，错误的是：",
+      "options": [
+        "A. Function只需文字描述",
+        "B. 模型判断是否调用",
+        "C. 模型会生成代码并执行",
+        "D. 需指定函数名与参数"
+      ],
+      "answer": 2,
+      "analysis": "模型不会执行真实代码，仅返回结构化调用参数。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "对Multi-Query Attention(MQA) 描述正确的是：",
+      "options": [
+        "A. 所有头共享一份 Key 与 Value，每个头保留自己的 Query",
+        "B. 将查询头分成 G 组，每组共享 K/V",
+        "C. Q、K、V 一对一对应"
+      ],
+      "answer": 0,
+      "analysis": "MQA 的核心是多个头共享同一份 K/V，从而减少 KV 参数量。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "以下哪个选项是 PPO 中 Reference Model 的作用？",
+      "options": [
+        "A. 给定状态的期望回报",
+        "B. 输出动作概率",
+        "C. 计算策略比率、限制更新幅度",
+        "D. 评估 response 的分值"
+      ],
+      "answer": 2,
+      "analysis": "Reference Model 用于计算策略 KL 约束，使更新更稳定。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "关于超参数调优描述正确的是：",
+      "options": [
+        "A. 优先选择 SGD 可减少计算压力",
+        "B. 前期使用较大学习率并线性下降",
+        "C. batch_size 应保持不变",
+        "D. 正确初始化权重可加快收敛，如 T-fixup"
+      ],
+      "answer": 3,
+      "analysis": "初始化对大模型稳定训练至关重要，T-fixup 常用于稳定训练。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "多头自注意力相比单头注意力的优势是：",
+      "options": [
+        "A. 增加模型并行能力",
+        "B. 减少计算量",
+        "C. 并行处理多个查询",
+        "D. 捕捉更多位置间的交互信息"
+      ],
+      "answer": 3,
+      "analysis": "多头注意力可以从多个子空间捕捉不同关系，信息更丰富。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "关于大模型描述错误的是：",
+      "options": [
+        "A. 大模型“大”体现在设备需求成本上",
+        "B. 大模型像“大脑”，小模型像“器官”",
+        "C. 大模型定义为能自主完成任务的智能体"
+      ],
+      "answer": 2,
+      "analysis": "大模型不是 AI agent，本身不具备完全自主能力。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "关于Transformer计算维度，正确的是：",
+      "options": [
+        "A. 前馈网络输入输出维度为 (N,D)",
+        "B. MHA 中头数 H 则输出为 (N,H,D)",
+        "C. 输入嵌入输出形状为 (N,D)",
+        "D. q,k,v 维度相同且等于嵌入维度D"
+      ],
+      "answer": 3,
+      "analysis": "q/k/v 的投影维度一致，是 Transformer 的基础设定。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "数据中心典型配电方案中，以下哪项不部署在数据中心内部？",
+      "options": [
+        "A. rPDU",
+        "B. UPS",
+        "C. 储能系统",
+        "D. 变压器"
+      ],
+      "answer": 3,
+      "analysis": "变压器通常位于室外/变电区域。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "以下哪种方法无法降低大模型部署成本？",
+      "options": [
+        "A. 使用专用推理硬件",
+        "B. 模型压缩",
+        "C. 模型微调",
+        "D. 云端协同"
+      ],
+      "answer": 2,
+      "analysis": "模型微调提升效果，但不会降低推理部署成本。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "DeepSpeed-Inference 为推理提出的算法是：",
+      "options": [
+        "A. 量化权重(qwZ)",
+        "B. 量化梯度(qgZ)",
+        "C. DeepNVMe",
+        "D. MoQ"
+      ],
+      "answer": 3,
+      "analysis": "MoQ (Mixture of Quantization) 是 DS-Inference 的推理量化技术。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "以下哪项不是模块化数据中心特点？",
+      "options": [
+        "A. 对部署环境要求更高",
+        "B. 可在工厂预集成",
+        "C. 扩容简单",
+        "D. 部署更快"
+      ],
+      "answer": 0,
+      "analysis": "模块化数据中心对环境要求更低、部署灵活。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "使用SFT方法微调时不包含以下哪一步？",
+      "options": [
+        "A. 评估性能",
+        "B. 压缩参数",
+        "C. 获取预训练模型",
+        "D. 对模型进行微调"
+      ],
+      "answer": 1,
+      "analysis": "SFT 不涉及模型压缩。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "选址咨询中考虑地价、电价、宽带并与收益对比的方法是：",
+      "options": [
+        "A. CAPEX",
+        "B. TCO",
+        "C. OPEX",
+        "D. ROI"
+      ],
+      "answer": 1,
+      "analysis": "TCO 关注整体建设与运营成本。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "Transformer计算过程中错误的描述是：",
+      "options": [
+        "A. 自注意力只计算与相邻词的注意力",
+        "B. Softmax得到注意力权重",
+        "C. 输入需嵌入与位置编码",
+        "D. 损失通常为交叉熵"
+      ],
+      "answer": 0,
+      "analysis": "自注意力是全局注意力，并非只关注邻近词。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "大模型时代的并行计算错误描述是：",
+      "options": [
+        "A. 亿级参数对内存是挑战",
+        "B. 千亿模型单卡周期太长",
+        "C. 百亿模型预训练需多卡",
+        "D. 训练数据需为参数的10倍以上"
+      ],
+      "answer": 3,
+      "analysis": "数据量无需固定为参数10倍以上。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "以下哪些不是小模型的优势？",
+      "options": [
+        "A. 资源消耗小",
+        "B. 语言理解能力强",
+        "C. 可在旧设备运行",
+        "D. 适用场景多"
+      ],
+      "answer": 1,
+      "analysis": "语言理解能力强是大模型的优势。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "3B 参数模型使用 FP16 训练时，参数存储约需多少？",
+      "options": [
+        "A. 9GB",
+        "B. 1.5GB",
+        "C. 3GB",
+        "D. 6GB"
+      ],
+      "answer": 3,
+      "analysis": "3B × 2 bytes = 6GB。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "多头自注意力的优势是：",
+      "options": [
+        "A. 并行多个查询",
+        "B. 并行多个查询（重复）",
+        "C. 提高资源利用率",
+        "D. 捕获更多位置间交互信息"
+      ],
+      "answer": 3,
+      "analysis": "多头可从不同子空间建模关系。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "关于DeepSpeed描述错误的是：",
+      "options": [
+        "A. 是微软推出的训练工具",
+        "B. 提供模型并行、混合精度等技术",
+        "C. 提供内存优化与模型压缩辅助工具",
+        "D. 基于MindSpore构建"
+      ],
+      "answer": 3,
+      "analysis": "DeepSpeed 基于 PyTorch，不是 MindSpore。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "以下哪项适合服务器部署文生图服务？",
+      "options": [
+        "A. ChatGLM2",
+        "B. LLaMA2",
+        "C. MAE",
+        "D. Stable Diffusion"
+      ],
+      "answer": 3,
+      "analysis": "Stable Diffusion 属于典型文生图模型。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "使用MindFormers大模型套件时，定义Transformer模型参数，哪一项无需在yaml中定义？",
+      "options": [
+        "A. precision_ratio",
+        "B. num_heads",
+        "C. compute_dtype",
+        "D. vocab_size"
+      ],
+      "answer": 0,
+      "analysis": "precision_ratio 是自动推导参数, 非必需配置。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "LLaMA2 是 LLaMA 升级版本，下列描述错误的是：",
+      "options": [
+        "A. 训练数据量提升40%",
+        "B. 参数量包含7B/13B/33B/65B",
+        "C. 包含超过100万偏好对齐数据",
+        "D. 可免费用于研究与商业用途"
+      ],
+      "answer": 1,
+      "analysis": "LLaMA2 参数量为：7B / 13B / 70B，没有 33B。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "大模型训练流程中描述错误的是：",
+      "options": [
+        "A. 微调用于适配下游任务",
+        "B. RLHF 使输出更符合人类偏好",
+        "C. 预训练决定基础能力",
+        "D. 微调弥补预训练阶段数据质量不足"
+      ],
+      "answer": 3,
+      "analysis": "微调不会改善通用能力，只适配任务，不替代预训练。"
+    },
+
+    {
+      "type": "single",
+      "typeName": "单选题",
+      "question": "以下关于 MoE 门控网络描述错误的是：",
+      "options": [
+        "A. 训练 MoE 时门控网络参数会冻结",
+        "B. 专家数量不影响门控神经元数量",
+        "C. 门控网络本身也是神经网络",
+        "D. 门控网络负责选择专家"
+      ],
+      "answer": 0,
+      "analysis": "门控网络会参与训练，不会冻结。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "智算中心网络中的无损技术，哪些描述正确？",
+      "options": [
+        "A. PFC解决因拥塞造成的丢帧",
+        "B. Rail Group提供接口级负载均衡",
+        "C. AIECN通过智能调节ECN门限",
+        "D. iQCN防止PFC死锁"
+      ],
+      "answer": [0,1,2,3],
+      "analysis": "四项均是华为无损网络关键技术。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "VLLM 框架的特性包括：",
+      "options": [
+        "A. 支持流式输出",
+        "B. 支持张量并行推理",
+        "C. 使用 Paged Attention",
+        "D. 使用 Static Batching"
+      ],
+      "answer": [0,1,2],
+      "analysis": "VLLM 的 batching 是 Continuous batching，不是 static。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "Ascend Docker Runtime 的正确描述包括：",
+      "options": [
+        "A. 允许容器平滑使用昇腾设备",
+        "B. 需修改 Docker 才能运行",
+        "C. 提供 run 包部署",
+        "D. 保持 Docker 命令接口兼容"
+      ],
+      "answer": [0,2,3],
+      "analysis": "Ascend Docker Runtime 完全兼容原生 Docker，不需修改 Docker。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "与 PPO 相比，DPO 做了哪些优化？",
+      "options": [
+        "A. 新增参数层减少计算",
+        "B. 去除 PPO 的采样过程",
+        "C. 使用更高效的编码器",
+        "D. 去除 Reward 与 Critic 模型"
+      ],
+      "answer": [1,3],
+      "analysis": "DPO 用纯监督方式，无需 Reward 与 Critic，也无采样环节。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "LLM 推理包含哪些阶段？",
+      "options": [
+        "A. Prefill",
+        "B. Decoding",
+        "C. Encoding",
+        "D. Comparing"
+      ],
+      "answer": [0,1],
+      "analysis": "LLM 推理由 Prefill（一次性算输入）与 Decoding（逐 token 生成）组成。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "某数据中心规划中，市场风险在第一象限，施工风险在第四象限，正确的应对是：",
+      "options": [
+        "A. 制定施工风险降低方案",
+        "B. 对市场风险做经济估算与准备金",
+        "C. 对施工风险制定应急替代方案",
+        "D. 拆解市场风险并制定营销策略"
+      ],
+      "answer": [2,3],
+      "analysis": "第一象限需主动应对（d），第四象限需做应急预案（c）。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "选择基础模型并用于业务微调需考虑哪些因素？",
+      "options": [
+        "A. 模型参数量",
+        "B. 使用的深度学习框架",
+        "C. 模型擅长领域",
+        "D. 训练服务器硬件架构"
+      ],
+      "answer": [0,1,2,3],
+      "analysis": "基础模型选择必须同时考虑模型规模、框架、领域适配及硬件。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "MindSpeed 优化器内存优化正确描述包括：",
+      "options": [
+        "A. 使用 FP16 更新降低内存占用",
+        "B. 梯度保存为 FP16，进入优化器再转 FP32",
+        "C. 更新后权重可转为 FP16 继续训练",
+        "D. 梯度必须持续保存为 FP32"
+      ],
+      "answer": [0,1,2],
+      "analysis": "D 是错误的，梯度无需持续保存为 FP32。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "关于 Open-Sora 描述错误的是：",
+      "options": [
+        "A. 复现成本降低 80%",
+        "B. 可直接处理任意分辨率视频",
+        "C. 提供视频处理到训练推理全流程",
+        "D. 由 OpenAI 开源"
+      ],
+      "answer": [0,3],
+      "analysis": "Open-Sora 并非 OpenAI 开源，其复现成本也并未降低 80%。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "训练与使用 MoE 模型的正确描述包括：",
+      "options": [
+        "A. 微调阶段可能过拟合",
+        "B. 相同计算资源下可实现更大参数量",
+        "C. 推理显存占用低",
+        "D. 推理时仅使用少量专家"
+      ],
+      "answer": [0,1,3],
+      "analysis": "MoE 推理时各 token 激活少量专家，但显存不一定更低。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "数据加载优化正确的是：",
+      "options": [
+        "A. 数据尽量放 NVMe",
+        "B. NLP 中选长度差异大的样本",
+        "C. 预处理放 datasets 并多 worker",
+        "D. 可尝试预取数据"
+      ],
+      "answer": [0,2,3],
+      "analysis": "NLP 应选长度相近，避免 padding 浪费，所以 B 错误。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "迁移到昇腾服务器训练时 loss 持续上升，应排查：",
+      "options": [
+        "A. 数据异常",
+        "B. 混合精度配置",
+        "C. 学习率是否合理",
+        "D. FP16 导致梯度不稳定"
+      ],
+      "answer": [1,2,3],
+      "analysis": "题目给的正确答案排除了 A（但实际 A 也可能影响）。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "智算中心参数面网络服务器接入方式描述正确的是：",
+      "options": [
+        "A. 同 TOR 故障面更小但负载均衡要求高",
+        "B. 同 TOR 接入需支持借轨通信",
+        "C. 不同 TOR 故障面更大",
+        "D. 同 TOR 负载均衡要求较低"
+      ],
+      "answer": [0,2],
+      "analysis": "不同 TOR 故障面更大；同 TOR 负载均衡压力更高。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "MindFormers 大模型套件的 Parallel 组件从框架上支持哪些并行方式？",
+      "options": [
+        "A. 双副本并行",
+        "B. 网络并行",
+        "C. 优化器并行",
+        "D. 模型并行"
+      ],
+      "answer": [0,2,3],
+      "analysis": "Parallel 组件支持 DP（双副本）、Optimizer Parallel、Model Parallel。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "关于 Transformer 模型中的位置编码，哪些是正确的？",
+      "options": [
+        "A. 能表示相对位置信息",
+        "B. 为每个位置分配固定向量，与内容无关",
+        "C. 仅用于编码器",
+        "D. 是固定矩阵，维度与输入相同"
+      ],
+      "answer": [0,1],
+      "analysis": "A/B 正确；C 错误（解码器也使用），D 不一定正确（如 RoPE 是运算方式）。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "P-Tuning V2 相较于 V1 的改进点包括：",
+      "options": [
+        "A. 使用 4-bit NormalFloat",
+        "B. 舍弃 Verbalizer 映射",
+        "C. 多任务 Prompt 预训练",
+        "D. 移除 Reparameterization 加速方式"
+      ],
+      "answer": [1,2,3],
+      "analysis": "V2 使用更统一的 Prompt 表征，不依赖 Verbalizer，并用多任务预训练 Prompt。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "在自注意力中，哪些因素会影响注意力权重？",
+      "options": [
+        "A. 序列相对位置信息",
+        "B. 多头数量",
+        "C. encoder block 数量",
+        "D. 序列长度"
+      ],
+      "answer": [0,1,3],
+      "analysis": "注意力受到 qk 点积形状影响，与位置、头数、序列长有关。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "将 PyTorch+GPU 模型迁移到昇腾服务器前需要哪些准备？",
+      "options": [
+        "A. 保证模型能在 GPU 正常跑通",
+        "B. 在 GPU 上产出精度与性能基线",
+        "C. 安装昇腾 NPU 驱动与软件栈",
+        "D. 替换昇腾不亲和算子"
+      ],
+      "answer": [0,1,2,3],
+      "analysis": "四项均必须完成，尤其基线用于后续对比。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "大模型微调能带来哪些作用？",
+      "options": [
+        "A. 学习特定场景语料，与预训练数据形成差异",
+        "B. 改善特定任务上的输出效果",
+        "C. 减少幻觉现象",
+        "D. 改善过拟合"
+      ],
+      "answer": [0,1,2],
+      "analysis": "微调会改善输出效果并减少幻觉，但无法直接改善过拟合。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "大模型训练对硬件提出更高需求，包括：",
+      "options": [
+        "A. 大带宽",
+        "B. 大显存（内存）",
+        "C. 高算力",
+        "D. 低功耗"
+      ],
+      "answer": [0,1,2],
+      "analysis": "低功耗是加分项但不是大模型训练的必要属性。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "CloudFabric 智能无损网络可部署以下哪些技术？",
+      "options": [
+        "A. PFC",
+        "B. iQCN",
+        "C. AIECN",
+        "D. iNOF"
+      ],
+      "answer": [0,1,2,3],
+      "analysis": "四项均为 CloudFabric 方案中支持的无损技术。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "常见的基础模型包括：",
+      "options": [
+        "A. Transformer",
+        "B. BERT",
+        "C. GPT",
+        "D. CLIP",
+        "E. GLM"
+      ],
+      "answer": [0,1,2,3,4],
+      "analysis": "五项均是典型基础模型。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "昇腾虚拟化错误描述包括：",
+      "options": [
+        "A. 不满足多用户反复申请不同规格",
+        "B. 支持多个用户申请同一台服务器资源",
+        "C. 最小分配单位是 NPU",
+        "D. Atlas 800T A2 最多支持 8 名用户"
+      ],
+      "answer": [0,2,3],
+      "analysis": "A/C/D 错误；B 正确可多用户共享整机资源。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "模型压缩的原因包括：",
+      "options": [
+        "A. 降低推理芯片设计难度",
+        "B. 降低算力消耗",
+        "C. 提高输出准确率",
+        "D. 降低内存占用"
+      ],
+      "answer": [0,1,3],
+      "analysis": "模型压缩通常会略降准确率，因此 C 不是目的。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "算法模型平台技术架构三层包括：",
+      "options": [
+        "A. 资源管理层",
+        "B. 系统基座",
+        "C. 应用服务层",
+        "D. 机器学习服务层"
+      ],
+      "answer": [0,2,3],
+      "analysis": "系统基座属于 ML 层的基础。应用服务层与 ML 服务层同属上层。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "集群训练NPU利用率周期性变为0，应检查哪些？",
+      "options": [
+        "A. 样本面光模块速率",
+        "B. 参数面光模块速率",
+        "C. 业务面光模块速率",
+        "D. 管理面光模块速率"
+      ],
+      "answer": [1,2,3],
+      "analysis": "利用率掉到0常因通信面带宽不匹配（参数/业务/管理面）。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "John 用 RNN 做机器翻译，以下操作正确的是：",
+      "options": [
+        "A. 训练与测试误差都大 → 增加 RNN 宽度/层数",
+        "B. 过拟合 → 减少数据量",
+        "C. 训练与测试误差都大 → 换 Transformer",
+        "D. 过拟合 → 增加训练时长"
+      ],
+      "answer": [0,2],
+      "analysis": "B/D 错误。过拟合要减少模型能力或加入正则，而不是减少数据或延长训练。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "提示工程效果不佳时，下列方法有效的是：",
+      "options": [
+        "A. 增加训练数据",
+        "B. 尝试不同提示结构",
+        "C. 引入领域知识",
+        "D. 分析模型错误输出并优化提示"
+      ],
+      "answer": [1,2,3],
+      "analysis": "提示工程不依赖训练数据增加，而是依赖提示设计优化。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "智算中心 Leaf 交换机部署模式错误的有：",
+      "options": [
+        "A. M-LAG 控制面独立",
+        "B. M-LAG 可支持 bond 模式",
+        "C. 服务器多 IP 不绑定时推荐 M-LAG",
+        "D. M-LAG 交换机之间无需连线"
+      ],
+      "answer": [2,3],
+      "analysis": "M-LAG 交换机必须互联，且多 IP 不绑定一般不推荐 M-LAG。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "自注意力中缩放操作不是以下哪些原因？",
+      "options": [
+        "A. 防止 Softmax 饱和",
+        "B. 增加非线性",
+        "C. 使权重更均匀",
+        "D. 降低计算复杂度"
+      ],
+      "answer": [1,2,3],
+      "analysis": "缩放目的是避免 qk 点积过大导致 Softmax 进入饱和，仅 A 正确原因。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "大模型单 batch 时间受哪些因素影响？",
+      "options": [
+        "A. 数据加载",
+        "B. 前向/反向计算",
+        "C. 优化器更新",
+        "D. 多设备通信"
+      ],
+      "answer": [0,1,2,3],
+      "analysis": "单批耗时由全链路组成，包括数据→计算→优化→通信。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "预训练大模型适配下游任务可采用：",
+      "options": [
+        "A. 特征工程",
+        "B. RAG",
+        "C. 微调",
+        "D. 提示工程"
+      ],
+      "answer": [1,2,3],
+      "analysis": "大模型不需要传统特征工程。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "以下位置编码中可以提供相对位置信息的是哪些？",
+      "options": [
+        "A. Alibi",
+        "B. RoPE",
+        "C. 三角函数位置编码",
+        "D. BPE"
+      ],
+      "answer": [0,1],
+      "analysis": "Alibi 与 RoPE 属于相对位置编码；三角函数是绝对位置编码；BPE 与位置无关。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "大模型的特点包括：",
+      "options": [
+        "A. 模型参数量大",
+        "B. 多模态融合",
+        "C. 与小模型相比训练方式不同",
+        "D. 自动生成指定内容的摘要"
+      ],
+      "answer": [0,1,2],
+      "analysis": "自动摘要是应用能力，不属于大模型定义特点。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "昇腾硬件虚拟化会隔离哪些硬件资源？",
+      "options": [
+        "A. NPU 内存",
+        "B. AICore",
+        "C. AI CPU",
+        "D. Storage"
+      ],
+      "answer": [0,1,2],
+      "analysis": "虚拟化只隔离 NPU 相关资源，Storage 属于系统资源。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "CloudFabric 解决方案中可部署哪些无损技术？",
+      "options": [
+        "A. PFC",
+        "B. iQCN",
+        "C. AIECN",
+        "D. iNOF"
+      ],
+      "answer": [0,1,2,3],
+      "analysis": "四项均为华为 CloudFabric 的无损网络技术。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "以下哪些指令数据生成算法需要人工种子数据？",
+      "options": [
+        "A. SELF-INSTRUCT",
+        "B. SELF-ALIGN",
+        "C. Instruction-Backtranslation",
+        "D. SELF-QA"
+      ],
+      "answer": [0,1,2],
+      "analysis": "SELF-QA 属于无监督生成，不需人工种子。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "AI 应用部署在云侧的优缺点描述正确的是：",
+      "options": [
+        "A. 算力充足，扩展性强",
+        "B. 网络安全问题难保障",
+        "C. 网络延迟大",
+        "D. 维护复杂"
+      ],
+      "answer": [0,1,2,3],
+      "analysis": "四项均为典型云侧特征。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "数据科学家可直接使用哪些 Foundation Model？",
+      "options": [
+        "A. CLIP",
+        "B. BERT",
+        "C. ResNet",
+        "D. GLM"
+      ],
+      "answer": [0,1,3],
+      "analysis": "ResNet 属于传统CNN，不属于 Foundation Model 定义。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "大模型云侧应用的缺点包括：",
+      "options": [
+        "A. 算力扩容复杂",
+        "B. 数据安全问题",
+        "C. 云侧算力中心维护复杂",
+        "D. 网络延迟"
+      ],
+      "answer": [1,2,3],
+      "analysis": "云侧算力扩容反而简单，A 不是缺点。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "Mindformers 支持断点续训的配置方法包括：",
+      "options": [
+        "A. run_xxx.yaml 中配置 load_checkpoint 与 resume_training",
+        "B. TrainingArguments 配置 resume_from_checkpoint 与 resume_training",
+        "C. Trainer.train 配置 train_checkpoint 与 resume_training",
+        "D. Trainer.finetune 配置 finetune_checkpoint 与 resume_training"
+      ],
+      "answer": [0,1,2,3],
+      "analysis": "四种均可触发断点恢复。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "Data-Juicer 数据处理流程包括：",
+      "options": [
+        "A. 数据收集",
+        "B. 质量评估",
+        "C. 精调参数",
+        "D. 数据处理"
+      ],
+      "answer": [0,1,2,3],
+      "analysis": "Data-Juicer 覆盖从采集到处理全流程。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "微调数据相比预训练数据有什么特点？",
+      "options": [
+        "A. 数据质量要求高",
+        "B. 通常人工编写或自动构建",
+        "C. 量级较小",
+        "D. 可直接使用网页数据"
+      ],
+      "answer": [0,1,2],
+      "analysis": "微调不能直接用网页原始数据（需清洗）。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "大模型训练时长计算正确的是哪些？",
+      "options": [
+        "A. MoE 400B（活跃120B）、13000B tokens、4000卡、利用率0.45 → 61.2天",
+        "B. 120B，200B tokens，1000卡，0.4 → 17.8天",
+        "C. 30B，20B tokens，100卡，0.35 → 10.2天",
+        "D. MoE 300B（活跃120B）、1300B tokens、300卡、0.45 → 34.3天"
+      ],
+      "answer": [0,3],
+      "analysis": "B/C 的计算量不符合理论 FLOPs 估算。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "企业部署大模型应用时，哪些描述是正确的？",
+      "options": [
+        "A. 旧基础模型仍可保留使用",
+        "B. 开源模型维护成本更低",
+        "C. 预训练→SFT→对齐耗时费力",
+        "D. 数据需要收集、清洗、抽取等流程"
+      ],
+      "answer": [1,2,3],
+      "analysis": "保留多个基础模型不利于维护，A 通常不推荐。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "华为分布式存储方案的可靠性描述正确的包括：",
+      "options": [
+        "A. 支持异步复制/快照/回收站",
+        "B. 支持端到端 DIF 一致性校验",
+        "C. 可容忍 4 节点故障并 10s 内切换",
+        "D. 支持节点自愈保护"
+      ],
+      "answer": [0,1,2,3],
+      "analysis": "四项均属于华为多级可靠性机制。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "编写 Prompt 能提升模型效果的方法包括：",
+      "options": [
+        "A. Prompt 尽可能长",
+        "B. Prompt 尽可能短",
+        "C. 使用结构化输出",
+        "D. 用分隔符区分输入区域"
+      ],
+      "answer": [2,3],
+      "analysis": "Prompt 长度不是越长越好，重点是结构化。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "基于 Transformer，大模型可分为哪三类结构？",
+      "options": [
+        "A. Encoder-only",
+        "B. Decoder-only",
+        "C. Encoder-Decoder",
+        "D. GPT"
+      ],
+      "answer": [0,1,2],
+      "analysis": "GPT 属于 Decoder-only，不是独立类别。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "注意力机制中，以下哪些关于 Query/Key/Value 是正确的？",
+      "options": [
+        "A. Q/K/V 维度在多头注意力中可能不同",
+        "B. V 可与 Q/K 维度不同",
+        "C. Q 和 K 必须同维度才能点积",
+        "D. Q/K/V 通常由线性层生成"
+      ],
+      "answer": [1,2,3],
+      "analysis": "A 错误：Q/K/V 维度需匹配注意力运算要求。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "全参微调的大模型内存占用包括哪几部分？",
+      "options": [
+        "A. 优化器参数",
+        "B. 模型梯度",
+        "C. 模型权重",
+        "D. 损失函数"
+      ],
+      "answer": [0,1,2],
+      "analysis": "损失函数不占显著模型内存。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "ICL 推理阶段优化包括：",
+      "options": [
+        "A. 自监督 ICL 训练",
+        "B. 有监督 ICL 训练",
+        "C. Prompt 设计",
+        "D. 打分函数优化"
+      ],
+      "answer": [2,3],
+      "analysis": "训练属于前一阶段，推理优化为 Prompt 与 scoring。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "MindFormers 套件的目标是提供端到端大模型开发能力，以下哪些描述是正确的？",
+      "options": [
+        "A. 包含大模型评估",
+        "B. 包含大模型推理部署",
+        "C. 包含大模型微调",
+        "D. 包含大模型数据预处理"
+      ],
+      "answer": [0,1,2,3],
+      "analysis": "MindFormers 覆盖从预处理到训练、微调、推理全流程。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "智能客服 AI 应用的需求（正确项）包括：",
+      "options": [
+        "A. 智能问答能力",
+        "B. 自然语言理解能力",
+        "C. 维护知识库内容",
+        "D. 不需要个性化多轮对话"
+      ],
+      "answer": [0,1],
+      "analysis": "智能客服需要问答与理解能力，并需要多轮对话（D 错）。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "大模型与小模型的区别包括：",
+      "options": [
+        "A. 大模型学习能力强",
+        "B. 大模型能处理多任务，小模型单任务",
+        "C. 大模型需要更大数据，小模型较少",
+        "D. 大模型多模态能力强",
+        "E. 大模型 few-shot 能力强"
+      ],
+      "answer": [0,1,2,3,4],
+      "analysis": "五项均为大模型相对小模型的典型优势。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "Google 论文中 Transformer 结构的优点包括：",
+      "options": [
+        "A. 可学习全局依赖",
+        "B. Encoder 与 Decoder 可并行训练",
+        "C. 资源利用率高、特征学习能力强",
+        "D. block 输入输出维度一致易扩展"
+      ],
+      "answer": [0,1,2,3],
+      "analysis": "四项均为 Google Transformer 原始论文所述优势。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "MindFormers 组件描述中错误的是：",
+      "options": [
+        "A. Trainer 依赖 PyTorch 并行能力",
+        "B. Config 提供多类型配置与两类使用方式",
+        "C. Parallel 集成 MindSpore 的并行能力",
+        "D. Pipeline 提供任务级推理接口"
+      ],
+      "answer": [0,1],
+      "analysis": "A/B 错误：Trainer 基于 MindSpore 并行；Config 不只是两类方式。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "ZeRO++ 的关键设计包括：",
+      "options": [
+        "A. 量化权重 qwz",
+        "B. 量化梯度 qgz",
+        "C. 分层分区 ZeRO (hpz)",
+        "D. DeepNVMe"
+      ],
+      "answer": [0,1,2],
+      "analysis": "ZeRO++ 包含 qwz、qgz 与 hpz；DeepNVMe 属于另一类技术。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "混合精度训练采用哪些数据类型？",
+      "options": [
+        "A. FP32",
+        "B. BF16",
+        "C. INT8",
+        "D. FP16"
+      ],
+      "answer": [0,3],
+      "analysis": "混合精度主要使用 FP32 与 FP16（或 BF16），但题目目标答案为 FP32、FP16。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "指令微调的自动生成技术包括：",
+      "options": [
+        "A. SELF-Generator",
+        "B. SELF-QA",
+        "C. SELF-INSTRUCT",
+        "D. SELF-ALIGN"
+      ],
+      "answer": [1,2,3],
+      "analysis": "SELF-Generator 并非主流指令数据自动生成方法。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "智算中心服务器接入方式描述正确的是：",
+      "options": [
+        "A. 单 TOR 负载均衡要求低",
+        "B. 多 TOR 故障面更大",
+        "C. 单 TOR 需支持借轨通信",
+        "D. 单 TOR 故障面更小、负载要求更高"
+      ],
+      "answer": [1,3],
+      "analysis": "A 错误：单 TOR 负载更高；B/D 正确；C 是单 TOR 要求。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "MindFormers 正确描述有哪些？",
+      "options": [
+        "A. Trainer 提供高阶 API 用于推理",
+        "B. Pipeline 可以让模型搭建更解耦",
+        "C. Parallel 集成 MindSpore 原生并行能力",
+        "D. Parallel 可通过配置化接口完成大模型并行配置"
+      ],
+      "answer": [2,3],
+      "analysis": "Pipeline 不是用于搭建模型；Trainer 是训练组件而不是推理组件。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "NPU 资源闲置时哪些做法合理？",
+      "options": [
+        "A. 部署基础大模型对外服务",
+        "B. 使用虚拟化平台提供云服务",
+        "C. 训练新的基础大模型",
+        "D. 用行业数据集微调基础模型"
+      ],
+      "answer": [0,1,3],
+      "analysis": "C 会继续消耗算力，不属于减少闲置的合理方式。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "将已有模型部署到 Atlas 推理服务器时可能使用哪些组件？",
+      "options": [
+        "A. MindStudio",
+        "B. AscendIE",
+        "C. MindFormers",
+        "D. CANN"
+      ],
+      "answer": [0,2,3],
+      "analysis": "AscendIE不是部署组件；CANN 与 MindStudio/MindFormers 都会用到。"
+    },
+
+    {
+      "type": "multiple",
+      "typeName": "多选题",
+      "question": "关于 CPU、GPU、NPU 的使用描述正确的是：",
+      "options": [
+        "A. I/O 密集任务适合 GPU",
+        "B. 大模型推理适合 GPU/NPU",
+        "C. AI 训练适合 GPU/NPU",
+        "D. 计算密集任务适合 CPU"
+      ],
+      "answer": [1,2],
+      "analysis": "CPU 不适合大规模计算密集任务（如训练），D 错误。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "Flash Attention 能显著减少计算量和存储需求，从而提升训练与推理速度。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 1,
+      "analysis": "FlashAttention 并不减少计算量，而是减少内存访问。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "大模型按场景可分为基础模型、行业模型与场景模型。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "三层模型体系结构描述正确。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "业务面网络使用 TCP，参数面网络与样本面都需高带宽无损网络。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "参数/样本面属于训练关键路径，必须无损高带宽。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "提示工程可在不更新参数的情况下使模型适配任务。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "Prompt 是零参数适配流程。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "RoCE v1/v2 分别基于 UDP/TCP 实现。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 1,
+      "analysis": "RoCE v2 基于 UDP，而非 TCP。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "QLora 证明了可以在不产生性能下降的情况下微调 Int4 量化模型，并使用分页优化器等技术。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "QLora 使用 NF4 量化与 paged optimizer，实现低精度微调且性能保持。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "客户的智能客服业务需求包括降低人力成本、支持多轮对话、意图识别、训练资源数量规划、延迟要求等。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "这些均为 AI 客服部署时的典型需求项。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "MindPet 专注低参微调并提供 LoRA、Prefix、Prompt 等 Adapter。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "MindPet 是华为低参微调库，与 MindFormers 配合使用。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "BPE 是一种基于字符的二元编码策略，用于单词切分。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "BPE 本质是基于统计的字符合并算法，用于分词。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "ZeRO 的两种优化方式 ZERO-DP 和 ZERO-R，其中 ZERO-DP 用于减少剩余内存消耗。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 1,
+      "analysis": "ZERO-DP 是数据并行优化，ZERO-Offload 才负责减少内存。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "ModelArts 数据框架支持数据采集、筛选、标注与版本管理，但不支持自动标注。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 1,
+      "analysis": "ModelArts 支持自动标注与半自动标注。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "移动终端面临的主要挑战之一是平衡性能体验与能耗。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "端侧设备算力有限，能耗是核心限制因素。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "DeepSpeed 的 ZeRO-Infinity 可将模型参数卸载到 CPU 与 NVMe。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "ZeRO-Infinity 最大亮点就是 CPU + NVMe 双层卸载体系。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "用少量数据进行多个 Epoch 的二次训练可能导致大模型能力退化乃至失效。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "灾难性遗忘在二次训练中非常常见。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "GLUE/SuperGLUE 是当前衡量语言理解能力的标准基准。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "两者长期作为 NLP 模型评估基准。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "为了训练稳定性，需要保持 batch_size 始终不变。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 1,
+      "analysis": "动态 batch size/梯度累积是常见训练策略，不要求固定。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "Mindformers 会保存 checkpoint_network 文件可用于恢复训练。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 1,
+      "analysis": "实际保存路径不同，此项表述不准确。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "LLaMA 有 7B/13B/33B/65B 四种版本。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "原版 LLaMA 确实包含 7B/13B/33B/65B。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "Flash Attention 可显著降低神经网络计算量与存储需求。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 1,
+      "analysis": "它减少的是 HBM 访问次数，而非计算量本身。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "LLM 压缩的挑战包括需要大量修改推理代码才能加速。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 1,
+      "analysis": "现代压缩如 GPTQ、AWQ 大多无需大量修改推理框架。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "大模型通过调用小模型可显著提升数学与分类任务表现。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 1,
+      "analysis": "调用小模型不会自动提高输出质量，需专门工具机制。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "MindFormers 可直接读取 JSON/Parquet 数据格式。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 1,
+      "analysis": "必须转换为 mindrecord 才能直接使用。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "全参微调与低参微调所需数据量差别不大。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 1,
+      "analysis": "全参微调需要显著更多数据。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "大模型选型可分为商业模型与开源模型两类途径。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "行业中确实分为商业化 API 和开源自部署两类。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "冷板式液冷为间接液冷，浸没式液冷为直接液冷。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "冷板不直接接触芯片；浸没式直接接触液体。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "PyTorch+GPU 工具链完善但学习成本高。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 1,
+      "analysis": "PyTorch 学习成本较低，是最易用的 DL 框架之一。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "模型大于 10B–100B 区间时开始出现涌现能力。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "当前研究普遍认为涌现最常出现在 10B–100B 区间。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "MoE 的专家一般是前馈神经网络（FNN）。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "MoE 中专家通常为 MLP/FNN。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "芯片算力与内存增长速度均赶不上大模型规模增长。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "这是大模型时代的核心硬件矛盾。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "LLaMA2 的训练数据比 LLaMA 多 40%，上下文长度扩大了一倍并进行了偏好对齐。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "描述与官方一致。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "Foundation Model 如果训练数据包含偏激内容，应通过给数据打标签并分类编码重新训练以完全避免偏见。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 1,
+      "analysis": "偏见无法通过简单重新标注全部解决，需要对齐训练、安全过滤等复杂方法。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "使用 TensorFlow/PyTorch 时开发者无需关心 GEMM 优化，因为框架会自动处理。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "框架底层调用高性能库（如 cuBLAS、ACL），确实无需人工优化 GEMM。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "DeepSpeed 是深度学习训练优化工具，采用分布式训练与混合精度以加速训练。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "描述符合 DeepSpeed 的核心功能。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "数据中心主要能耗构成包括 IT 设备、供配电与制冷能耗。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "三部分构成 PUE（数据中心能效）的主要来源。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "P-Tuning 是在 Prompt-Tuning 基础上加入编码计算以加速收敛。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "P-Tuning 通过软提示和可训练 embedding 提升训练效率。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "大模型可借助知识库补强领域能力并提升回复准确率。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "RAG 等方法可增强模型在专业领域的表现。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "Transformer 的主要计算量来自注意力机制。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "尤其在长序列中，Attention 占主要 FLOPs。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "MindStudio 可创建多种昇腾工程并支持 C/C++、Java、Python 项目。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "MindStudio 支持多语言工程开发。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "多头注意力需要缓存多组 Q/K，GQA 通过多组共享 V 来节省内存。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 1,
+      "analysis": "GQA 共享的是 K/V，而不是只共享 V；题目描述错误。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "基础模型是用海量数据和计算资源训练得到的通用深度学习模型。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "与 Foundation Model 定义一致。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "微调时应保证数据不相关，避免重复，以提升泛化能力。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "去重与数据多样性是微调数据准备关键点。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "大模型的涌现能力包括语境学习、指令遵循与逐步推理能力。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "这是大模型规模达到阈值后获得的关键能力。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "混合专家模型由稀疏 MoE 层与门控网络组成。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "MoE = 多专家 + 门控路由，是稀疏激活模型。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "Transformer 中 Multi-Head Attention 的作用是关注输入不同部分。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "不同头关注不同的特征子空间，提高表达能力。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "RoCE v1/v2 版本分别基于 RCE 与 TCP。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 1,
+      "analysis": "RoCEv1 为二层以太帧；RoCEv2 为 UDP。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "NLP 数据加载时应选取长度差异大的样本以避免带宽压力。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 1,
+      "analysis": "应选择长度相近样本以减少 padding 浪费。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "DeepSpeed 可基于 PyTorch 与 MindSpore 构建分布式训练。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 1,
+      "analysis": "DeepSpeed 仅基于 PyTorch。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "全参微调与低参微调所需数据量差不多。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 1,
+      "analysis": "低参微调通常只需极小量数据，远小于全参。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "MindPet 提供 LoRA/Prefix/Prompt 等 Adapter，可直接与 MindFormers 结合实现低参微调。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "是华为低参微调的核心组件。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "DeepSpeed 推理支持 FP32/FP16/INT8。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "DS-Inference 支持多类型权重量化。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "提示工程的目标是提升大模型通用性，而非特定任务表现。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 1,
+      "analysis": "Prompt Engineering 的重点就是针对特定任务调优表达方式。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "提示工程的目标是提升模型对特定任务的表现。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "提示工程是一种任务级调优方法。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "人工智能未来将完全模拟人类大脑思维方式。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 1,
+      "analysis": "当前技术远不足以模拟人类思维方式。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "ReLU 不存在梯度饱和问题且稳定性好。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "ReLU 避免了 sigmoid/tanh 的饱和问题。"
+    },
+
+    {
+      "type": "judge",
+      "typeName": "判断题",
+      "question": "Prompt-Tuning 会冻结模型参数，只训练 Prompt embedding。",
+      "options": ["A. 正确","B. 错误"],
+      "answer": 0,
+      "analysis": "Prompt-Tuning 的特点是仅训练软提示。"
+    },
+
+    {
+      "type": "fill",
+      "typeName": "填空题",
+      "question": "LLM推理的______阶段对芯片峰值算力要求比较高。(请填写英文)",
+      "answer": ["Prefill"],
+      "analysis": "Prefill 阶段需要处理完整输入序列，计算量最大。"
+    },
+
+    {
+      "type": "fill",
+      "typeName": "填空题",
+      "question": "DeepSpeed中内置了多种压缩方法、专门帮助开发者压缩模型的库是______。(请填写英文)",
+      "answer": ["Compression"],
+      "analysis": "DeepSpeed Compression 模块提供多种压缩算法如量化、稀疏等。"
+    },
+
+    {
+      "type": "fill",
+      "typeName": "填空题",
+      "question": "______算法的核心思想是通过对语言中的常见单词进行统计分析，确定最常见的字符对并进行编码。(请填写英文缩写)",
+      "answer": ["BPE"],
+      "analysis": "BPE 通过逐次合并字符对实现分词。"
+    },
+
+    {
+      "type": "fill",
+      "typeName": "填空题",
+      "question": "昇腾NPU专为AI计算设计，Cube占比高，单个时钟周期最大可以完成______次运算。(请填入阿拉伯数字)",
+      "answer": ["4096"],
+      "analysis": "Cube 单周期矩阵计算能力是 4096 次。"
+    },
+
+    {
+      "type": "fill",
+      "typeName": "填空题",
+      "question": "在Transformer中，Decoder进行注意力计算时采用了______(请输入英文)操作遮挡后面的词；V和______(请输入英文缩写)使用Encoder编码信息；______(请输入英文缩写)使用上一层输出。",
+      "answer": ["masked", "K", "Q"],
+      "analysis": "Decoder 自注意力需 masked；Cross-attention 中 Query 来自 decoder。"
+    },
+
+    {
+      "type": "fill",
+      "typeName": "填空题",
+      "question": "训练大模型需要大规模、高质量、______的数据集，这些数据可包含文本、图像、语音、______等形式。",
+      "answer": ["多模态", "视频"],
+      "analysis": "大模型训练通常包含多模态数据，如文图音视频。"
+    },
+
+    {
+      "type": "fill",
+      "typeName": "填空题",
+      "question": "CANN 的______结合昇腾芯片可以减少参数计算。(请填写中文)",
+      "answer": ["算子融合引擎"],
+      "analysis": "算子融合减少访存与冗余计算，加速模型执行。"
+    },
+
+    {
+      "type": "fill",
+      "typeName": "填空题",
+      "question": "Prompt 相关研究中，将任务拆成多步骤并通过搜索验证最终路径的方法叫做______。(请填写英文)",
+      "answer": ["TOT"],
+      "analysis": "Tree of Thoughts（TOT）基于搜索树提升推理能力。"
+    },
+
+    {
+      "type": "fill",
+      "typeName": "填空题",
+      "question": "RLHF 中会使用 PPO 算法，其流程包含 Actor、Critic、Reward 以及______ Model。",
+      "answer": ["reference"],
+      "analysis": "Reference Model 用于计算 KL 约束。"
+    },
+
+    {
+      "type": "fill",
+      "typeName": "填空题",
+      "question": "若工程师计划在CPU部署13B模型，使用FP16精度，最少需要______GB内存。(请输入8的倍数)",
+      "answer": ["32"],
+      "analysis": "13B × 2 字节 ≈ 26GB，需要向上取整到 32GB。"
+    },
+
+    {
+      "type": "fill",
+      "typeName": "填空题",
+      "question": "模型部署中为兼顾延迟通常采用______精度数据。(请填写中文)",
+      "answer": ["低"],
+      "analysis": "较低精度（如 INT8/FP16）可降低计算开销与延迟。"
+    },
+
+    {
+      "type": "fill",
+      "typeName": "填空题",
+      "question": "智算中心网络架构中，AI计算集群可分为参数面、______、业务面与管理面。",
+      "answer": ["样本面"],
+      "analysis": "样本面负责数据读写，带宽需求高。"
+    },
+
+    {
+      "type": "fill",
+      "typeName": "填空题",
+      "question": "ModelArts 数据标注提供了______、______及团队标注功能。",
+      "answer": ["人工标注", "智能标注"],
+      "analysis": "ModelArts 支持人工、自动、团队协作标注方式。"
+    },
+
+    {
+      "type": "fill",
+      "typeName": "填空题",
+      "question": "Prefix-Tuning 中可学习前缀在 Transformer 模型中以______形式注入。(英文)",
+      "answer": ["past_key_values"],
+      "analysis": "Prefix-Tuning 修改的是 past key/value 而不是 input embedding。"
+    },
+
+    {
+      "type": "fill",
+      "typeName": "填空题",
+      "question": "若 Transformer 某层参数量巨大，需要进行张量并行；其中______切分方式最易引起精度误差。(中文)",
+      "answer": ["行"],
+      "analysis": "行切分会改变矩阵乘结构，更易产生累积误差。"
+    },
+
+    {
+      "type": "fill",
+      "typeName": "填空题",
+      "question": "FlashAttention 通过提高对______的利用并减少______访问实现加速。(填英文缩写)",
+      "answer": ["SRAM", "HBM"],
+      "analysis": "核心优化是减少 HBM 访问，提升算力利用率。"
+    },
+
+    {
+      "type": "fill",
+      "typeName": "填空题",
+      "question": "MindInsight 支持可视化训练与性能调优，并提供______调试能力。(填两个中文)",
+      "answer": ["精度"],
+      "analysis": "MindInsight 提供精度调试以及可视化算子分析等功能。"
+    },
+
+    {
+      "type": "fill",
+      "typeName": "填空题",
+      "question": "MindFormers 与 ______ 结合，可通过 PetAdapter 实现低参微调。",
+      "answer": ["MindPet"],
+      "analysis": "MindPet 是用于 Adapter 训练的官方组件。"
+    },
+
+    {
+      "type": "fill",
+      "typeName": "填空题",
+      "question": "FabricInsight 利用设备的______机制采集指标并预测网络异常。",
+      "answer": ["Telemetry"],
+      "analysis": "Telemetry 可实时采集运行状态用于 AIOps 分析。"
+    },
+
+    {
+      "type": "fill",
+      "typeName": "填空题",
+      "question": "Self-attention 相比普通 Attention 能关注输入序列______的依赖关系。(中文)",
+      "answer": ["内部"],
+      "analysis": "Self-attention 的 Q/K/V 来自同一序列，建模内部关系。"
+    }
+
+  ]
+}
