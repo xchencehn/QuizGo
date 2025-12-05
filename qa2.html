@@ -606,26 +606,30 @@
             setTimeout(() => area.innerHTML = '', 2000);
         }
 
-        // 练习模式：顺序
-        function startPractice() {
-            isExamMode = false;
-            currentQuestions = [...allQuestions];
-            initQuiz();
-        }
-
-        // 考试模式：按类型抽取，保持顺序
-        function startExam() {
-            isExamMode = true;
+        // 练习/考试复用的选题逻辑（抽取固定数量，按类型）
+        function selectExamQuestions() {
             const byType = { single: [], multiple: [], judge: [], fill: [] };
             allQuestions.forEach(q => byType[q.type]?.push(q));
-            
-            currentQuestions = [
+
+            return [
                 ...shuffle(byType.single).slice(0, 15),
                 ...shuffle(byType.multiple).slice(0, 15),
                 ...shuffle(byType.judge).slice(0, 15),
                 ...shuffle(byType.fill).slice(0, 5)
             ];
-            
+        }
+
+        // 练习模式：使用与考试相同的抽题策略，但非考试（显示解析、无倒计时）
+        function startPractice() {
+            isExamMode = false;
+            currentQuestions = selectExamQuestions();
+            initQuiz();
+        }
+
+        // 考试模式：按类型抽取并启动计时
+        function startExam() {
+            isExamMode = true;
+            currentQuestions = selectExamQuestions();
             initQuiz();
             startTimer();
         }
